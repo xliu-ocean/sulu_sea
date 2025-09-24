@@ -3,6 +3,6 @@
  useOBCS=.TRUE.,
  useDiagnostics=.TRUE.,
  useRBCS=.TRUE.,
- useMNC=.TRUE.,
+ useMNC=.FALSE.,
  useKL10=.FALSE',
  &

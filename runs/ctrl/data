@@ -5,8 +5,8 @@
 # Continuous equation parameters
  &PARM01
 
- tRef = 55*0.,
- sRef = 55*35.,
+ tRef = 57*0.,
+ sRef = 57*35.,
  no_slip_sides  = .FALSE.,
  no_slip_bottom = .FALSE.,
  viscAh  = 1.E3, 
@@ -60,11 +60,12 @@
 
 # Gridding parameters
  &PARM04
- usingCartesianGrid=.TRUE.,
- usingSphericalPolarGrid=.FALSE.,
-
- delXFile = 'delX.bin',
- delYFile = 'delY.bin',
+ usingCartesianGrid=.FALSE.,
+ usingSphericalPolarGrid=.TRUE.,
+ xgOrigin = 112.5,
+ ygOrigin = -3.3,
+ dxSpacing = 0.016666666666667,
+ dySpacing = 0.016666666666667,
  delRFile = 'delZ.bin',
  &
 
@@ -74,6 +75,6 @@
  uVelInitFile    = 'Uinit.bin',
  vVelInitFile    = 'Vinit.bin',
  hydrogThetaFile = 'Tinit.bin',
- bathyFile       = 'topog.bin',
+ bathyFile       = 'bathy_h_fromgebco.bin',
  &
 

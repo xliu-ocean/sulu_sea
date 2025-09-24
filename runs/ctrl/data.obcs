@@ -3,8 +3,8 @@
 # This flag turns off checking and fixing problematic topography across 
 # open boundaries.
  OBCSfixTopo=.FALSE.,
- OB_Ieast = 272*-1,
- OB_Iwest = 272*1,
+ OB_Ieast = 1140*-1,
+ OB_Iwest = 1140*1,
 # OB_Jnorth = 456*-1,
 # OB_Jsouth = 456*1,
  useOBCSprescribe = .TRUE.,
