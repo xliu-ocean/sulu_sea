@@ -56,11 +56,11 @@ patch3 = np.zeros((nyc,nxc))
 patch4 = np.zeros((nyc,nxc)) 
 patch5 = np.zeros((nyc,nxc)) 
 
-patch0x = (x > 112.5) & (x < 114) 
-patch0y = (y > -3.3) & (y < -2.5)
+patch0x = (x > 112.5) & (x < 114.5) 
+patch0y = (y >= -3.31) & (y < -2.5)
 patch0[np.ix_(patch0y, patch0x)] = np.nan
 patch1x = (x > 120) & (x < 121.25) 
-patch1y = (y > -3.3) & (y < -2.6)
+patch1y = (y >= -3.31) & (y < -2.6)
 patch1[np.ix_(patch1y, patch1x)] = np.nan
 patch2x = (x > 127.85) & (x < 128) 
 patch2y = (y > -0.2) & (y < 0.5)
