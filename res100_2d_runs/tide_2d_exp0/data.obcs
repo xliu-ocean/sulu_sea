@@ -1,0 +1,63 @@
+# Open-boundaries
+ &OBCS_PARM01
+# This flag turns off checking and fixing problematic topography across 
+# open boundaries.
+ OBCSfixTopo=.FALSE.,
+ OB_Ieast = 1908*1520,
+ OB_Iwest = 1908*1,
+ OB_Jnorth = 1520*1908,
+ OB_Jsouth = 1520*1,
+ useOBCSprescribe = .TRUE.,
+ useOBCSsponge = .TRUE.,
+# OBWuFile = 'Uzonal.bin'
+# OBEuFile = 'Uzonal.bin'
+# OBNuFile = 'Umerid.bin'
+# OBSuFile = 'Umerid.bin' 
+# OBWvFile = 'Vzonal.bin'
+# OBEvFile = 'Vzonal.bin'
+# OBNvFile = 'Vmerid.bin'
+# OBSvFile = 'Vmerid.bin'  
+ OBWtFile = 'Tzonal_2d.bin',
+ OBEtFile = 'Tzonal_2d.bin',
+ OBNtFile = 'Tmerid_2d.bin',
+ OBStFile = 'Tmerid_2d.bin',  
+ OBCS_monitorFreq= 3600.,	  
+ OBCS_monSelect = 1,
+ useOBCStides = .TRUE.,
+ OBCS_tidalPeriod = 44714.16, 9*0.,
+ OBS_vTidAmFile ='tidalComp.OBSamNvel.bin',
+ OBS_vTidPhFile ='tidalComp.OBSphNvel.bin',
+ OBS_uTidAmFile ='tidalComp.OBSamTvel.bin',
+ OBS_uTidPhFile ='tidalComp.OBSphTvel.bin',
+#
+ OBN_vTidAmFile ='tidalComp.OBNamNvel.bin',
+ OBN_vTidPhFile ='tidalComp.OBNphNvel.bin',
+ OBN_uTidAmFile ='tidalComp.OBNamTvel.bin',
+ OBN_uTidPhFile ='tidalComp.OBNphTvel.bin',
+#
+ OBE_uTidAmFile ='tidalComp.OBEamNvel.bin',
+ OBE_uTidPhFile ='tidalComp.OBEphNvel.bin',
+ OBE_vTidAmFile ='tidalComp.OBEamTvel.bin',
+ OBE_vTidPhFile ='tidalComp.OBEphTvel.bin',
+#
+ OBW_uTidAmFile ='tidalComp.OBWamNvel.bin',
+ OBW_uTidPhFile ='tidalComp.OBWphNvel.bin',
+ OBW_vTidAmFile ='tidalComp.OBWamTvel.bin',
+ OBW_vTidPhFile ='tidalComp.OBWphTvel.bin',
+ &
+
+# Orlanski parameters
+ &OBCS_PARM02
+#Cmax=0.45,
+#cVelTimeScale=1000.,
+ &
+
+ &OBCS_PARM03
+# inverse relax. coef's (seconds)
+ Urelaxobcsinner=7200.,
+ Urelaxobcsbound=3600.,
+ Vrelaxobcsinner=7200.,
+ Vrelaxobcsbound=3600.,
+ spongeThickness=150,
+ &
+
