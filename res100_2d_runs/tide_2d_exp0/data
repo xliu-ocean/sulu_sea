@@ -9,7 +9,7 @@
  sRef = 1*35.,
  no_slip_sides  = .FALSE.,
  no_slip_bottom = .FALSE.,
- viscAh  = 1.E2, 
+ viscAh  = 1.E1, 
  viscAz  = 1.E-4,
  diffKhT = 1.E1,
  diffKzT = 1.E-5,
@@ -31,7 +31,6 @@
  staggerTimeStep=.TRUE.
  saltStepping  = .FALSE.,
  tempAdvScheme = 77,
- hFacMin=0.1,
  debuglevel=1,
  &
 
