@@ -9,7 +9,7 @@
  sRef = 57*35.,
  no_slip_sides  = .FALSE.,
  no_slip_bottom = .FALSE.,
- viscAh  = 1.E2, 
+ viscAh  = 1.E1, 
  viscAz  = 1.E-4,
  diffKhT = 1.E1,
  diffKzT = 1.E-5,
@@ -33,6 +33,7 @@
  tempAdvScheme = 77,
  hFacMin=0.1,
  debuglevel=1,
+ bottomDragLinear=2.5e-3,
  &
 
 # Elliptic solver parameters 
@@ -48,7 +49,7 @@
 
  niter0 = 0,
 # pickupSuff = 'pickup.ckptA',
- nTimeSteps  =  69500,
+ nTimeSteps  =  172800,
  deltaT    = 5.0,
  dumpFreq    =  31536000.0,
  monitorFreq =  3600.0,
